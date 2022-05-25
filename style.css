@@ -24,6 +24,10 @@
     align-items: center;
 }
 
+.main {
+    padding: 10rem 0 0 0;
+}
+
 #main {
     background: #fff;
 }
@@ -45,10 +49,12 @@
 
 .n1 .tab *, .n1 .title {
     padding: 10px;
+    cursor: pointer;
 }
 
 .n1 .title {
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .n1 .list {
@@ -75,6 +81,7 @@
 }
 
 .n1 .searchbox {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
@@ -107,6 +114,7 @@
 
 .n2 {
     position: sticky;
+    align-items: center;
     top: 0;
     color: #fff;
     background-color: var(--green);
@@ -160,26 +168,54 @@
     transition:  background 0s;
 }
 
-section .chat {
+.inbox {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-section .chat .container {
-    padding: 6px;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8) ;
+    padding: 5px 0;
+    border-bottom: 1px solid #dedede;
 }
 
-.section .chat .container * {
-    padding: 4px;
+.content {
+    width: 100%;
+    padding: 0 5px;
 }
 
-.section .chat .avatar img {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
+.img {
+    margin-right: 5px;
+}
+
+.img img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
+.head-body {
+    padding: .5rem 0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-body-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.head-body-date {
+    font-weight: lighter;
+    font-size: small;
+}
+
+
+.inbox-body p{
+    font-weight: lighter;
+}
+
+
+.content small {
+    color: var(--green2);
+    font-size: small;
+}
